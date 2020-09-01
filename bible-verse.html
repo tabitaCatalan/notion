@@ -1,6 +1,39 @@
-<script src="https://www.biblegateway.com/votd/votd.write.callback.js"></script>
+<!--script src="https://www.biblegateway.com/votd/votd.write.callback.js"></script>
 <script src="https://www.biblegateway.com/votd/get/?format=json&version=NTV&callback=BG.votdWriteCallback"></script>
 <!-- alternative for no javascript -->
-<noscript>
+
+<!--noscript>
 <iframe framespacing="0" frameborder="no" src="https://www.biblegateway.com/votd/get/?format=html&version=NTV">View Verse of the Day</iframe>
-</noscript>
+</noscript-->
+
+<div class="quote-window section">
+  <h2 id="quote" class="text-center">
+    <script src="https://www.biblegateway.com/votd/get/?format=json&version=NTV&callback=BG.votdWriteCallback"></script>
+  </h2>
+  <h2 class="text-right">
+    <small id="author">
+      <script src="https://www.biblegateway.com/votd/get/?format=json&version=NTV&callback=BG.votdWriteCallback"></script>
+    </small></h2>
+  <div id="twitter"></div>
+</div>
+
+<div class="text-center button-container section">
+  <a class="button" href="#">button</a>
+</div>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
